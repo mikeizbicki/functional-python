@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 '''
 Your solution for each function should be only a single line long.
 In particular, you may not use any loops when implementing these functions;
