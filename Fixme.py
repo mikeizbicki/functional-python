@@ -41,24 +41,23 @@ def threes(n):
     >>> threes(50)
     [3, 13, 23, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 43]
     '''
-    return list(map(int(), (filter(lambda x: '3' in x,
-                                   (map(str(), range(0, n+1)))))))
+    return list(map(lambda y: int(y), (filter(lambda
+                                       x: '3' in x, (map(lambda p: str(p),
+                                                         range(0, n+1)))))))
 
 
 def small_words(text):
     '''
     Returns a list of all words in the input
     text that are less than 4 characters long.
-
     HINT:
     Recall that text.split() converts the text variable into a list of words.
-
     >>> small_words('this is a simple test case')
     ['this', 'is', 'a', 'test', 'case']
     >>> small_words('really enormous words')
-    [ ]
+    []
     >>> small_words('')
-    [ ]
+    []
     >>> small_words('a big word is bad')
     ['a', 'big', 'word', 'is', 'bad']
     '''
